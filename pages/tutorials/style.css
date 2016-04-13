@@ -1,0 +1,44 @@
+body {
+    font-family: "Trebuchet MS";
+}
+/*
+div.page {
+    margin-left: 200px
+}
+*/
+div.page {
+    float: right;
+    width: 100%;
+    background-color: #F0F0F0;
+}
+/*
+div.leftcontent {
+    float: left;
+    width: 200px;
+    margin-left: -200px;
+    background-color: #CCCCCC;
+}
+*/
+li.leftitem1 {
+    width: 200px;
+    background-color: #CCCCCC;   
+}
+
+li.leftitem2 {
+    width: 200px;
+    background-color: #F0F0F0;
+}
+
+li:hover {
+    font-size: 110%;
+    transform: scale(1.1);
+}
+
+ul.menu {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
