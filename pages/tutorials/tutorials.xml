@@ -1,15 +1,15 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
-<tutorials>
-    <tutorial name="R Markdown"
+<items>
+    <item name="R Markdown"
               link="http://rmarkdown.rstudio.com/"
               description="Describes markup to output R results to multipleformats."/>
-    <tutorial name="DaniWeb"
+    <item name="DaniWeb"
               link="https://www.daniweb.com/"
               description="An industry-focused discussion community of 1M+ developers and IT professionals learning and sharing knowledge."/>
-    <tutorial name="C++ Reference"
+    <item name="C++ Reference"
               link="http://www.cplusplus.com/"
               description="Website for general C++ reference."/>
-    <tutorial name="Codecademy"
+    <item name="Codecademy"
               link="https://www.codecademy.com/"
               description="Interactive website to learn how to code in several languages."/>
-</tutorials>
+</items>

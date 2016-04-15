@@ -42,3 +42,15 @@ a {
     text-decoration: none;
     color: black;
 }
+
+#link_div {
+    width:25%;
+    float:left;
+    padding:5px;
+}
+
+#description_div {
+    width:72%;
+    float:left;
+    padding:5px;
+}
