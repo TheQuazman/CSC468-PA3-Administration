@@ -9,7 +9,6 @@
         <link rel="stylesheet" type="text/css" href="style.css">
     </head>
     <body>
-        Example page.
 
     <div class="page">
         <div class="maincontent">
