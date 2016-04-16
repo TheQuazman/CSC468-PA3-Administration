@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
-<books>
-    <book name="R for Everyone: Advanced Analytics"
+<items>
+    <item name="R for Everyone: Advanced Analytics"
           link="http://www.amazon.com/Everyone-Advanced-Analytics-Graphics-Addison-Wesley/dp/0321888030"
           description="A book detailing the use of R."/>
-</books>
+</items>

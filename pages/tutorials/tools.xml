@@ -1,27 +1,27 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
-<tools>
-    <tool name="R"
+<items>
+    <item name="R"
           link="https://www.r-project.org/"
           description="R is a free software environment for statistical computing and graphics."/>
-    <tool name="RStudio"
+    <item name="RStudio"
           link="https://www.rstudio.com/"
           description="RStudio IDE is a powerful and productive user interface for R. It’s free and open source, and works great on Windows, Mac, and Linux."/>
-    <tool name="DataCamp"
+    <item name="DataCamp"
           link="https://www.datacamp.com/?"
           description="This website has tutorials for R and Python"/>
-    <tool name="Geany"
+    <item name="Geany"
           link="https://www.geany.org/"
           description="Geany is a text editor using the GTK+ toolkit with basic features of an integrated development environment. It was developed to provide a small and fast IDE, which has only a few dependencies from other packages."/>
-    <tool name="Notepad++"
+    <item name="Notepad++"
           link="https://notepad-plus-plus.org/"
           description="Notepad++ is a free source code editor and Notepad replacement that supports several languages. Running in the MS Windows environment, its use is governed by GPL License."/>
-    <tool name="7-Zip"
+    <item name="7-Zip"
           link="http://www.7-zip.org/"
           description="7-Zip is a file archiver with a high compression ratio."/>
-    <tool name="MiKTeX"
+    <item name="MiKTeX"
           link="http://miktex.org/download"
           description="A LaTeX distribution with simple IDE."/>
-    <tool name="TeXmaker"
+    <item name="TeXmaker"
           link="http://www.xm1math.net/texmaker/"
           description="Texmaker is a free, modern and cross-platform LaTeX editor for linux, macosx and windows systems that integrates many tools needed to develop documents with LaTeX, in just one application."/>
-</tools>
+</items>
