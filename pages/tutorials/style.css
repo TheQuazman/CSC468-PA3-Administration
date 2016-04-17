@@ -1,35 +1,56 @@
 body {
     font-family: "Trebuchet MS";
+    background-color: #FFFCEB;
 }
 
-div.page {
-    float: right;
+img.header {
     width: 100%;
-    background-color: #F0F0F0;
 }
 
-li.leftitem1 {
+// Side menu
+// I'm not sure why I need to do this twice
+//  but by doing this, the hover doesn't make
+//  the item grow past the left side of the browser.
+ul.leftmenu li {
     width: 200px;
-    background-color: #CCCCCC;   
 }
 
-li.leftitem2 {
+ul.leftmenu li.leftitem1 {
     width: 200px;
-    background-color: #F0F0F0;
+    //background-color: #FFFCEB;   
+    background-color: white;
 }
 
-li:hover {
+ul.leftmenu li.leftitem2 {
+    width: 200px;
+    background-color: #EFEBCD;
+    //background-color: white;
+}
+
+ul.leftmenu li:hover {
     font-size: 110%;
     transform: scale(1.1);
 }
 
-ul.menu {
-    list-style: none;
+ul.leftmenu li.currentleftitem {
+    width: 200px;
+    //background-color: #CCCCCC;
+    background-color: white;
+    font-weight: bold;
 }
 
-a {
+ul.leftmenu a {
     text-decoration: none;
     color: black;
+}
+
+ul.leftmenu {
+    list-style: none;
+    padding-left: 10px;
+}
+
+h2.leftmenuheader {
+    padding-left: 10px;
 }
 
 #link_div {
@@ -43,3 +64,4 @@ a {
     float:left;
     padding:5px;
 }
+
