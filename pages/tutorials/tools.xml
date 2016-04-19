@@ -1,27 +1,11 @@
-﻿<?xml version="1.0" encoding="utf-8" ?>
+<?xml version="1.0" encoding="utf-8"?>
 <items>
-    <item name="R"
-          link="https://www.r-project.org/"
-          description="R is a free software environment for statistical computing and graphics."/>
-    <item name="RStudio"
-          link="https://www.rstudio.com/"
-          description="RStudio IDE is a powerful and productive user interface for R. It’s free and open source, and works great on Windows, Mac, and Linux."/>
-    <item name="DataCamp"
-          link="https://www.datacamp.com/?"
-          description="This website has tutorials for R and Python"/>
-    <item name="Geany"
-          link="https://www.geany.org/"
-          description="Geany is a text editor using the GTK+ toolkit with basic features of an integrated development environment. It was developed to provide a small and fast IDE, which has only a few dependencies from other packages."/>
-    <item name="Notepad++"
-          link="https://notepad-plus-plus.org/"
-          description="Notepad++ is a free source code editor and Notepad replacement that supports several languages. Running in the MS Windows environment, its use is governed by GPL License."/>
-    <item name="7-Zip"
-          link="http://www.7-zip.org/"
-          description="7-Zip is a file archiver with a high compression ratio."/>
-    <item name="MiKTeX"
-          link="http://miktex.org/download"
-          description="A LaTeX distribution with simple IDE."/>
-    <item name="TeXmaker"
-          link="http://www.xm1math.net/texmaker/"
-          description="Texmaker is a free, modern and cross-platform LaTeX editor for linux, macosx and windows systems that integrates many tools needed to develop documents with LaTeX, in just one application."/>
-</items>
+    <item name="R" link="https://www.r-project.org/" description="R is a free software environment for statistical computing and graphics."/>
+    <item name="RStudio" link="https://www.rstudio.com/" description="RStudio IDE is a powerful and productive user interface for R. It’s free and open source, and works great on Windows, Mac, and Linux."/>
+    <item name="DataCamp" link="https://www.datacamp.com/?" description="This website has tutorials for R and Python"/>
+    <item name="Geany" link="https://www.geany.org/" description="Geany is a text editor using the GTK+ toolkit with basic features of an integrated development environment. It was developed to provide a small and fast IDE, which has only a few dependencies from other packages."/>
+    <item name="Notepad++" link="https://notepad-plus-plus.org/" description="Notepad++ is a free source code editor and Notepad replacement that supports several languages. Running in the MS Windows environment, its use is governed by GPL License."/>
+    <item name="7-Zip" link="http://www.7-zip.org/" description="7-Zip is a file archiver with a high compression ratio."/>
+    <item name="MiKTeX" link="http://miktex.org/download" description="A LaTeX distribution with simple IDE."/>
+    <item name="TeXmaker" link="http://www.xm1math.net/texmaker/" description="Texmaker is a free, modern and cross-platform LaTeX editor for linux, macosx and windows systems that integrates many tools needed to develop documents with LaTeX, in just one application."/>
+<item name="Power Archiver" link="http://www.powerarchiver.com" description="Freeware zip utility."/><item name="Unix for Windows Tools" link="http://www.rtr.com/Ready-to-Run_Software/windows_readypak.htm" description="This allows for Unix commands ported to windows."/><item name="OpenSSH" link="http://www.openssh.com/" description="OpenSSH is the premier connectivity tool for remote login with the SSH protocol."/></items>

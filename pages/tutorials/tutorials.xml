@@ -1,15 +1,7 @@
-﻿<?xml version="1.0" encoding="utf-8" ?>
+<?xml version="1.0" encoding="utf-8"?>
 <items>
-    <item name="R Markdown"
-              link="http://rmarkdown.rstudio.com/"
-              description="Describes markup to output R results to multipleformats."/>
-    <item name="DaniWeb"
-              link="https://www.daniweb.com/"
-              description="An industry-focused discussion community of 1M+ developers and IT professionals learning and sharing knowledge."/>
-    <item name="C++ Reference"
-              link="http://www.cplusplus.com/"
-              description="Website for general C++ reference."/>
-    <item name="Codecademy"
-              link="https://www.codecademy.com/"
-              description="Interactive website to learn how to code in several languages."/>
-</items>
+    <item name="R Markdown" link="http://rmarkdown.rstudio.com/" description="Describes markup to output R results to multipleformats."/>
+    <item name="DaniWeb" link="https://www.daniweb.com/" description="An industry-focused discussion community of 1M+ developers and IT professionals learning and sharing knowledge."/>
+    <item name="C++ Reference" link="http://www.cplusplus.com/" description="Website for general C++ reference."/>
+    <item name="Codecademy" link="https://www.codecademy.com/" description="Interactive website to learn how to code in several languages."/>
+<item name="W3Schools" link="http://www.w3schools.com/" description="This website has many tutorials for web-based programming."/><item name="PUTTY" link="http://www.chiark.greenend.org.uk/~sgtatham/putty/" description="SSH utility for Windows."/><item name="Maple Getting Started Guide" link="http://www.mcs.sdsmt.edu/4000/utilitiesDownloads/math/maple_getting_started_guide.pdf" description="A getting started guide for Maple."/><item name="Maple User Manual" link="http://www.mcs.sdsmt.edu/4000/utilitiesDownloads/math/maple_user_manual.pdf" description="The full users guide for Maple."/><item name="PHP Reference" link="http://www.php.net" description="PHP online manual."/><item name="Perl Reference" link="http://www.perl.com" description="Perl online documentation."/><item name="Java Reference" link="http://docs.oracle.com/javase/7/docs/api/" description="Java online reference."/><item name="Lisp" link="http://www.delorie.com/gnu/docs/elisp-manual-21/elisp.html/" description="Lisp online reference manual."/><item name="Message Passing Interface" link="http://www.mcs.sdsmt.edu/4000/references/information/cluster/mpi.html" description="MPI reference for C/C++."/><item name="SDSMT MCS Unix Information" link="http://www.mcs.sdsmt.edu/4000/references/information/unix/" description="Unix Introduction for SDSMT/CS Students."/><item name="Unix Help" link="http://www.mcs.sdsmt.edu/4000/references/information/unixhelp/" description="Help for working with Unix."/><item name="VIM Reference Book" link="http://www.mcs.sdsmt.edu/4000/references/information/vimbook.pdf" description="This book has much reference information for VI/VIM."/></items>

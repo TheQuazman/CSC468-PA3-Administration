@@ -1,26 +1,31 @@
 <?php
-    if(isset($_REQUEST['ok']))
+    if(isset($_POST['ok']))
     {
         $fileName = "";
-        switch ($_REQUEST['type'])
+        switch ($_POST['type'])
         {
             case "tutorial":
-                $fileName = "tutorials.xml";
+                $fileName = "./tutorials.xml";
                 break;
             case "tool":
-                $fileName = "tools.xml";
+                $fileName = "./tools.xml";
                 break;
             case "book":
-                $fileName = "books.xml";
+                $fileName = "./books.xml";
                 break;
         }
         $xml = simplexml_load_file($fileName);
-        //$xmlRoot = new SimpleXMLElement($xml);
+        
+		$link = $_POST['link'];
+		if (!preg_match("~^(?:f|ht)tps?://~i", $link))
+		{
+			$link = "http://" . $link;
+		}
 
         $item = $xml->addChild(item);
-        $item->addAttribute('name', $_REQUEST['name']);
-        $item->addAttribute('link', $_REQUEST['link']);
-        $item->addAttribute('description', $_REQUEST['description']);
+        $item->addAttribute('name', $_POST['name']);
+        $item->addAttribute('link', $link);
+        $item->addAttribute('description', $_POST['description']);
 
         $xml->asXML($fileName);
     }
