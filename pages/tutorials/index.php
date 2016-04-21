@@ -11,8 +11,8 @@
     </head>
     <body>
   
-  <div class="container" style="">
-    <img class="header" src="header.png" />
+  <div class="container" style="padding-top: 15px">
+    <img class="header" src="header.jpg" />
   </div>
 
 <div class="container" style="float: left; width: 15%;">
@@ -40,8 +40,8 @@
     </ul>
 </div>
 
-  	<div class="container" style="display: block; float: left; width: 80%; background-color: white; padding-left: 5px; padding-right: 15px>
-        <div class="content">
+  	<div class="container" style="display: block; float: left; width: 80%; padding-left: 5px; padding-right: 15px; padding-top: 30px;">
+        <div class="content" style="background: white;">
             <details>
 				<summary>Tutorials and References</summary>
 				<?php displayXML('tutorials.xml');?>
