@@ -34,23 +34,3 @@
         echo "</table>";
     }
 ?>
-
-<!DOCTYPE html>
-<html lang="en">
-    <head>
-        <meta charset="utf-8" />
-        <title>XML Display Test</title>
-        <link rel="stylesheet" type="text/css" href="style.css">
-    </head>
-    <body>
-        <?php
-            echo "<h1>Tutorials and Reference</h1>";
-            displayXML("tutorials.xml");
-            echo "<h1>Tools</h1>";
-            displayXML("tools.xml");
-            echo '</div>';
-            echo "<h1>Books</h1>";
-            displayXML("books.xml");
-        ?>
-    </body>
-</html>

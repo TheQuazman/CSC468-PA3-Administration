@@ -48,23 +48,7 @@
 </html>
 
 <script>
-  $(document).ready(function(){
-
-    $('.myButton').click(function(){
-      if ( this.value === 'collapse' ) {
-        // if it's open close it
-        open = false;
-        this.value = 'expand';
-        $(this).next("div.container").hide("slow");
-      }
-      else {
-        // if it's close open it
-        open = true;
-        this.value = 'collapse';
-        $(this).siblings("[value='collapse']").click(); //to collapse the open divs
-        $(this).next("div.container").show("slow");
-      }
-    });
-
-  });
+	if (!isDetailsSupported) {
+		document.documentElement.className += ' no-details';
+	}
 </script>

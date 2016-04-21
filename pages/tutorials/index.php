@@ -7,11 +7,15 @@
     <head>
         <title>Tutorials</title>
         <link rel="stylesheet" type="text/css" href="style.css">
-        <img class="header" src="header.png" />
+        <?php include('displayXML.php'); ?>
     </head>
     <body>
+  
+  <div class="container" style="">
+    <img class="header" src="header.png" />
+  </div>
 
-
+<div class="container" style="float: left; width: 15%;">
     <!-- Left menu tabs -->
     <h2 class="leftmenuheader">Site Map</h2>
     <!--<ul class="leftmenu" style="list-style: none;">-->
@@ -34,6 +38,35 @@
         <li class="leftitem2"><a href="../test/index.php">Test</a></li>
         <li class="currentleftitem"><a href="../tutorials/index.php">Tutorials</a></li>
     </ul>
+</div>
 
+  	<div class="container" style="display: block; float: left; width: 80%; background-color: white; padding-left: 5px; padding-right: 15px>
+        <div class="content">
+            <details>
+				<summary>Tutorials and References</summary>
+				<?php displayXML('tutorials.xml');?>
+			</details>
+
+			<details>
+				<summary>Tools</summary>
+				<?php displayXML('tools.xml');?>
+			</details>
+
+			 <details>
+				<summary>Books</summary>
+				<?php displayXML('books.xml');?>
+			</details>
+        </div>
+    </div>
+    
+    <div id="footer">
+      This is sample text.
+      
+      <br>
+      
+      Really.
+      
+    </div>
+    
     </body>
 </html>
