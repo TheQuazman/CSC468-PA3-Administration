@@ -12,17 +12,17 @@ img.header {
 //  but by doing this, the hover doesn't make
 //  the item grow past the left side of the browser.
 ul.leftmenu li {
-    width: 200px;
+    width: 100%;
 }
 
 ul.leftmenu li.leftitem1 {
-    width: 200px;
+    width: 100%;
     //background-color: #FFFCEB;   
     background-color: white;
 }
 
 ul.leftmenu li.leftitem2 {
-    width: 200px;
+    width: 100%;
     background-color: #EFEBCD;
     //background-color: white;
 }
@@ -33,7 +33,7 @@ ul.leftmenu li:hover {
 }
 
 ul.leftmenu li.currentleftitem {
-    width: 200px;
+    width: 100%;
     //background-color: #CCCCCC;
     background-color: white;
     font-weight: bold;
@@ -71,4 +71,6 @@ h2.leftmenuheader {
   padding;:10px 15px;
   clear:both;
   position: static;
+  bottom: 0px;
+  width: 100%
 }
