@@ -14,10 +14,13 @@
 
         <div id="header">
             <img class="header-logo" src="SDSMT-Logo.jpg"/>
-            Mathematics and Computer Science Department    
+            Mathematics and Computer Science Department
+            <!--<form action="login.php" method="post">    
+            <input type="text" name="name">
+            </form>-->
         </div>
 
-        <div class="container" style="float: left; width: 15%; padding-right: 10px;">
+        <div class="container1" style="float: left; width: 15%; padding-right: 10px;">
             <!-- Left menu tabs -->
             <h2 class="leftmenuheader">Site Map</h2>
             <!--<ul class="leftmenu" style="list-style: none;">-->
@@ -67,9 +70,14 @@
     
         <div id="footer">
             <center>
-            This website was made for Dr. Weiss's CSC 468 class.
+            <br>
+            This website was made for Dr. Weiss's CSC 468 - Graphic User Interface class.
             <br>
             Created by Joe Mowry, Ryan Quasney, and Chrissy Sorensen.
+            <br>
+            April 2016
+            <br>
+            <br>
             </center>
         </div>
     </body>
