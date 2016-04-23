@@ -13,14 +13,14 @@
     <body>        
 
         <div id="header">
-            <img class="header-logo" src="SDSMT-Logo.jpg"/>
+            <img class="header-logo " src="SDSMT-Logo.jpg"/>
             Mathematics and Computer Science Department
             <!--<form action="login.php" method="post">    
             <input type="text" name="name">
             </form>-->
         </div>
 
-        <div class="container1" style="float: left; width: 15%; padding-right: 10px;">
+        <div class="side-nav-container">
             <!-- Left menu tabs -->
             <h2 class="leftmenuheader">Site Map</h2>
             <!--<ul class="leftmenu" style="list-style: none;">-->
@@ -45,21 +45,21 @@
             </ul>
         </div>
 
-  	    <div class="container" style="display: block; float: left; width: 80%; padding-left: 15px; padding-top: 25px; padding-bottom: 60px;">
-            <div class="content" style="background: white;">
-                <details>
+  	    <div class="body-container">
+            <div class="content">
+                <details open>
 				    <summary style="font-size:30px;">Tutorials and References</summary>
                     <div style="padding-left:30px; background: inherit;">
 				        <?php displayXML('tutorials.xml');?>
                     </div>
 			    </details>
-			    <details>
+			    <details open>
 				    <summary style="font-size:30px;">Tools</summary>
                     <div style="padding-left:30px; background: inherit;">
 				        <?php displayXML('tools.xml');?>
                     </div>
 			    </details>
-			    <details>
+			    <details open>
 				    <summary style="font-size:30px;">Books</summary>
                     <div style="padding-left:30px; background: inherit;">
 				        <?php displayXML('books.xml');?>
