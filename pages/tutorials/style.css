@@ -1,5 +1,5 @@
 body {
-    font-family: "Trebuchet MS";
+    font-family: "Trebuchet MS", "Helvetica";
     background-color: #FFFCEB;
     background-attachment: fixed;
     background-image: url("McLaury.jpg");
@@ -52,6 +52,12 @@ ul.leftmenu {
 h2.leftmenuheader {
     padding-left: 10px;
     color: #f7f7f7;
+    background: #333;
+    color: #FFF;
+    border-radius: 3px;
+    padding: 5px 10px;
+    outline: none;
+    margin-bottom: -15px;
 }
 
 #link_div {
@@ -90,6 +96,8 @@ div.side-nav-container{
     float: left;
     width: 15%;
     padding-right: 10px;
+    /*top, right, bottom, left*/
+    margin: 0 0 0 1em;
 }
 
 div.body-container{
@@ -97,13 +105,14 @@ div.body-container{
     float: left;
     width: 80%;
     padding-left: 15px;
-    padding-top: 25px;
+    /*padding-top: 25px;*/
     padding-bottom: 60px;
 }
 
 div.content{
     background: white;
     box-shadow: 3px 3px 100px #000000;
+    margin-top: 1em;
 }
 
 #header{
@@ -123,16 +132,34 @@ div.content{
     bottom: 0;   
 }
 
-/*details {
-  border-radius: 3px;
-  background: #EEE;
-  margin: 1em 0;
+div.list-container{
+    box-shadow: 3px 3px 100px #000000;
+    border-radius: 3px;
+    background: #EEE;
+
 }
 
+/*More attractive styling changes to the heading of the collapsing content element.*/
 summary {
-  background: #333;
-  color: #FFF;
-  border-radius: 3px;
-  padding: 5px 10px;
-  outline: none;
-}*/
+    background: #333;
+    color: #FFF;
+    border-radius: 3px;
+    padding: 5px 10px;
+    outline: none;
+}
+
+/*More attractive styling changes to the details (list elements) of the collapsing content element*/
+details {
+    border-radius: 3px;
+    background: #EEE;
+}
+
+div.adminButtons{
+    padding: 5px;
+    color: #f7f7f7;
+    font-size: 1.5em;   
+    top: 0;
+    right: 0;
+    position: absolute;
+    width: 20%
+}
