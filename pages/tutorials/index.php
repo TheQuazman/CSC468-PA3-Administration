@@ -13,7 +13,7 @@
         <div class="container" style="padding-top: 15px">
             <img class="header" src="header.jpg" />
         </div>
-        <div class="container" style="float: left; width: 15%;">
+        <div class="container" style="float: left; width: 15%; padding-right: 10px;">
             <!-- Left menu tabs -->
             <h2 class="leftmenuheader">Site Map</h2>
             <!--<ul class="leftmenu" style="list-style: none;">-->
@@ -38,7 +38,7 @@
             </ul>
         </div>
 
-  	    <div class="container" style="display: block; float: left; width: 80%; padding-left: 15px; padding-top: 25px; padding-bottom: 30px;">
+  	    <div class="container" style="display: block; float: left; width: 80%; padding-left: 15px; padding-top: 25px; padding-bottom: 60px;">
             <div class="content" style="background: white;">
                 <details>
 				    <summary style="font-size:30px;">Tutorials and References</summary>

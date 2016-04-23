@@ -70,7 +70,7 @@ h2.leftmenuheader {
   border-top:1px solid #f0e9eb;
   padding;:10px 15px;
   clear:both;
-  position: static;
+  position: fixed;
   bottom: 0px;
   width: 100%
 }
