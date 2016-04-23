@@ -1,10 +1,9 @@
 body {
     font-family: "Trebuchet MS";
     background-color: #FFFCEB;
-}
-
-img.header {
-    width: 100%;
+    background-attachment: fixed;
+    background-image: url("McLaury.jpg");
+    margin: 0;
 }
 
 // Side menu
@@ -51,6 +50,7 @@ ul.leftmenu {
 
 h2.leftmenuheader {
     padding-left: 10px;
+    color: #f7f7f7;
 }
 
 #link_div {
@@ -65,12 +65,28 @@ h2.leftmenuheader {
     padding:5px;
 }
 
+#header {
+    color: #f7f7f7;
+    background: #001F56;
+    border-bottom: 5px solid #B6A36B;
+    padding;: 10px 15px;
+    clear: both;
+    position: static;
+    font-size: 150%;
+}
+
+img.header-logo {
+    width: 10%;
+}
+
 #footer {
-  background: #f7f7f7;
-  border-top:1px solid #f0e9eb;
-  padding;:10px 15px;
-  clear:both;
-  position: fixed;
-  bottom: 0px;
-  width: 100%
+    color: #f7f7f7;
+    background: #001F56;
+    border-top: 5px solid #B6A36B;
+    padding;: 10px 15px;
+    clear: both;
+    position: fixed;
+    width: 100%;
+    font-size: 75%;
+    bottom: 0;   
 }

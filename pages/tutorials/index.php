@@ -6,13 +6,17 @@
 <html>
     <head>
         <title>Tutorials</title>
-        <link rel="stylesheet" type="text/css" href="style.css">
+        <link rel="stylesheet" type="text/css" href="style.css"/>
+        <link rel="shortcut icon" href="SDSMT-Logo.jpg"/>
         <?php include('displayXML.php'); ?>
     </head>
-    <body>
-        <div class="container" style="padding-top: 15px">
-            <img class="header" src="header.jpg" />
+    <body>        
+
+        <div id="header">
+            <img class="header-logo" src="SDSMT-Logo.jpg"/>
+            Mathematics and Computer Science Department    
         </div>
+
         <div class="container" style="float: left; width: 15%; padding-right: 10px;">
             <!-- Left menu tabs -->
             <h2 class="leftmenuheader">Site Map</h2>
@@ -63,7 +67,7 @@
     
         <div id="footer">
             <center>
-            This website was made for Dr. Weiss' CSC 468 class.
+            This website was made for Dr. Weiss's CSC 468 class.
             <br>
             Created by Joe Mowry, Ryan Quasney, and Chrissy Sorensen.
             </center>
