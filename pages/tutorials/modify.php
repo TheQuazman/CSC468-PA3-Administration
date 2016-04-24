@@ -19,13 +19,13 @@
     </div>
 <!-- # -->
 
-        <div id="header">
+        <header>
             <img class="header-logo " src="SDSMT-Logo.jpg"/>
             Mathematics and Computer Science Department
             <!--<form action="login.php" method="post">    
             <input type="text" name="name">
             </form>-->
-        </div>
+        </header>
 
         <div class="side-nav-container">
             <!-- Left menu tabs -->

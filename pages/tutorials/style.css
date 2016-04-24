@@ -7,39 +7,27 @@ body {
 }
 
 // Side menu
-// I'm not sure why I need to do this twice
-//  but by doing this, the hover doesn't make
-//  the item grow past the left side of the browser.
 ul.leftmenu li {
     width: 100%;
-}
-
-ul.leftmenu li.leftitem1 {
-    width: 100%;
-    //background-color: #FFFCEB;   
-    background-color: white;
-}
-
-ul.leftmenu li.leftitem2 {
-    width: 100%;
-    background-color: #EFEBCD;
-    //background-color: white;
-}
+    background-color: #EEE;
+}   
 
 ul.leftmenu li:hover {
-    font-size: 110%;
-    transform: scale(1.1);
-    //cursor: pointer;
+    text-decoration: underline;
 }
 
-ul.leftmenu li.currentleftitem {
+ul.leftmenu li.current-item {
     width: 100%;
-    //background-color: #CCCCCC;
-    background-color: white;
+    background-color: #EEE;
     font-weight: bold;
 }
 
+ul.leftmenu li.current-item:hover {
+    text-decoration: none;
+}
+
 ul.leftmenu a {
+    display: block;
     text-decoration: none;
     color: black;
 }
@@ -92,6 +80,10 @@ img.header-logo {
     width: 10%;
 }
 
+h1.site-title {
+    position: absolute;
+}
+
 div.side-nav-container{
     float: left;
     width: 15%;
@@ -115,11 +107,6 @@ div.content{
     margin-top: 1em;
 }
 
-#header{
-    color: #f7f7f7;
-    font-size: 1.5em;
-}
-
 #footer {
     color: #f7f7f7;
     background: #001F56;
@@ -136,7 +123,6 @@ div.list-container{
     box-shadow: 3px 3px 100px #000000;
     border-radius: 3px;
     background: #EEE;
-
 }
 
 /*More attractive styling changes to the heading of the collapsing content element.*/
