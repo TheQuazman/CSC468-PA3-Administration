@@ -3,7 +3,7 @@
         <title>Tutorials</title>
         <link rel="stylesheet" type="text/css" href="style.css"/>
         <link rel="shortcut icon" href="SDSMT-Logo.jpg"/>
-        <?php include('displayXML.php'); ?>
+        <?php include('optionXML.php'); ?>
     </head>
     <body>        
 
@@ -59,19 +59,19 @@
                 <details open>
 				    <summary style="font-size:30px;">Tutorials and References</summary>
                     <div style="padding-left:30px; background: inherit;">
-				        <?php displayXML('tutorials.xml');?>
+				        <?php optionXML('tutorials.xml');?>
                     </div>
 			    </details>
 			    <details open>
     				    <summary style="font-size:30px;">Tools</summary>
                     <div style="padding-left:30px; background: inherit;">
-				        <?php displayXML('tools.xml');?>
+				        <?php optionXML('tools.xml');?>
                     </div>
 			    </details>
 			    <details open>
 				    <summary style="font-size:30px;">Books</summary>
                     <div style="padding-left:30px; background: inherit;">
-				        <?php displayXML('books.xml');?>
+				        <?php optionXML('books.xml');?>
                     </div>
 			    </details>
             </div>

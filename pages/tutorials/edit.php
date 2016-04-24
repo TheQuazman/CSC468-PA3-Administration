@@ -1,9 +1,69 @@
+<?php
+    $id = "";
+    $name = "";
+    $link = "";
+    $description = "";
+
+    if(isset($_POST['tutorial']))
+    {
+        $fileName = 'tutorials.xml';
+        $xml = simplexml_load_file($fileName);
+        foreach($xml->item as $a)
+        {
+            if($a['id'] == $_POST['tutorial'])
+            {
+                $id = $a['id'];
+                $type = 'tutorial';
+                $name = $a['name'];
+                $link = $a['link'];
+                $description = $a['description'];
+            }
+        }
+
+        $xml->asXML($fileName);
+    }
+    if(isset($_POST['tool']))
+    {
+        $fileName = 'tools.xml';
+        $xml = simplexml_load_file($fileName);
+        foreach($xml->item as $a)
+        {
+            if($a['id'] == $_POST['tool'])
+            {
+                $id = $a['id'];
+                $type = 'tool';
+                $name = $a['name'];
+                $link = $a['link'];
+                $description = $a['description'];
+            }
+        }
+
+        $xml->asXML($fileName);
+    }
+    if(isset($_POST['book']))
+    {
+        $fileName = 'books.xml';
+        $xml = simplexml_load_file($fileName);
+        foreach($xml->item as $a)
+        {
+            if($a['id'] == $_POST['book'])
+            {
+                $id = $a['id'];
+                $type = 'book';
+                $name = $a['name'];
+                $link = $a['link'];
+                $description = $a['description'];
+            }
+        }
+    }
+?>
+
+<!DOCTYPE html>
 <html>
     <head>
         <title>Tutorials</title>
         <link rel="stylesheet" type="text/css" href="style.css"/>
         <link rel="shortcut icon" href="SDSMT-Logo.jpg"/>
-        <?php include('displayXML.php'); ?>
     </head>
     <body>        
 
@@ -57,21 +117,19 @@
   	    <div class="body-container">
             <div class="content">
                 <details open>
-				    <summary style="font-size:30px;">Tutorials and References</summary>
+				    <summary style="font-size:30px;">Edit a Resource</summary>
                     <div style="padding-left:30px; background: inherit;">
-				        <?php displayXML('tutorials.xml');?>
-                    </div>
-			    </details>
-			    <details open>
-    				    <summary style="font-size:30px;">Tools</summary>
-                    <div style="padding-left:30px; background: inherit;">
-				        <?php displayXML('tools.xml');?>
-                    </div>
-			    </details>
-			    <details open>
-				    <summary style="font-size:30px;">Books</summary>
-                    <div style="padding-left:30px; background: inherit;">
-				        <?php displayXML('books.xml');?>
+				        <form id="entryForm" action="editXML.php" method="post">
+                            <?php
+                                echo "<input type='hidden' name='id' value='$id'/>";
+                                echo "<input type='hidden' name='type' value='$type'/>";
+                                echo "Resource Name: <input type='text' name='name' value='$name'/><br/><br/>";
+                                echo "Link: <input type='text' name='link' value='$link'/><br/><br/>";
+                                echo "Description:<br/><br/><textarea form='entryForm' name='description' style='height:100px;width:300px'>$description</textarea><br/><br/>";
+                            ?>
+                            
+                            <input type="submit" name="update" value="Update"/>
+                        </form>
                     </div>
 			    </details>
             </div>
@@ -91,3 +149,4 @@
         </div>
     </body>
 </html>
+

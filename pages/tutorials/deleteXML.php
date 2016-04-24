@@ -7,7 +7,6 @@
         {
             if($a['id'] == $_POST['tutorial'])
             {
-                echo $a->asXML();
                 $item=dom_import_simplexml($a);
                 $item->parentNode->removeChild($item);
             }

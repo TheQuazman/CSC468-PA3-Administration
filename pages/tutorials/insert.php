@@ -57,21 +57,18 @@
   	    <div class="body-container">
             <div class="content">
                 <details open>
-				    <summary style="font-size:30px;">Tutorials and References</summary>
+				    <summary style="font-size:30px;">Add a Resource</summary>
                     <div style="padding-left:30px; background: inherit;">
-				        <?php displayXML('tutorials.xml');?>
-                    </div>
-			    </details>
-			    <details open>
-    				    <summary style="font-size:30px;">Tools</summary>
-                    <div style="padding-left:30px; background: inherit;">
-				        <?php displayXML('tools.xml');?>
-                    </div>
-			    </details>
-			    <details open>
-				    <summary style="font-size:30px;">Books</summary>
-                    <div style="padding-left:30px; background: inherit;">
-				        <?php displayXML('books.xml');?>
+				        <form id="entryForm" action="insertXML.php" method="post">
+                            Resource Type:<br/>
+                            <input type="radio" name="type" value="tutorial" checked> Tutorial/Reference<br>
+                            <input type="radio" name="type" value="tool"> Tool<br>
+                            <input type="radio" name="type" value="book"> Book<br/><br/>
+                            Resource Name: <input type="text" name="name" /><br/><br/>
+                            Link: <input type="text" name="link"/><br/><br/>
+                            Description:<br/><br/><textarea form="entryForm" name="description" style="height:100px;width:300px"></textarea><br/><br/>
+                            <input type="submit" name="ok" value="add"/>
+                        </form>
                     </div>
 			    </details>
             </div>

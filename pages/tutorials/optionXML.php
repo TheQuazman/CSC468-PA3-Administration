@@ -41,9 +41,9 @@
 
             echo "<option value='$id'>$name</option>";
         }
-        echo "</select>";
+        echo "</select>&nbsp";
 
-        echo "<input type='submit' formmethod='post' formaction='deleteXML.php' name='$editButtonName' value='Edit'/>";
+        echo "<input type='submit' formmethod='post' formaction='edit.php' name='$editButtonName' value='Edit'/>&nbsp";
         echo "<input type='submit' formmethod='post' formaction='deleteXML.php' name='$deleteButtonName' value='Delete'/>";
         echo "</form>";
     }

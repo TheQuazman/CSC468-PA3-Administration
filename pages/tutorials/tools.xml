@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <items>
     <item id="1" name="R" link="https://www.r-project.org/" description="R is a free software environment for statistical computing and graphics."/>
-    <item id="2" name="RStudio" link="https://www.rstudio.com/" description="RStudio IDE is a powerful and productive user interface for R. It’s free and open source, and works great on Windows, Mac, and Linux."/>
+    <item id="2" name="RStudio" link="https://www.rstudio.com/" description="RStudio IDE is a powerful and productive user interface for R. It is a free and open source, and works great on Windows, Mac, and Linux."/>
     <item id="3" name="DataCamp" link="https://www.datacamp.com/?" description="This website has tutorials for R and Python"/>
     <item id="4" name="Geany" link="https://www.geany.org/" description="Geany is a text editor using the GTK+ toolkit with basic features of an integrated development environment. It was developed to provide a small and fast IDE, which has only a few dependencies from other packages."/>
     <item id="5" name="Notepad++" link="https://notepad-plus-plus.org/" description="Notepad++ is a free source code editor and Notepad replacement that supports several languages. Running in the MS Windows environment, its use is governed by GPL License."/>
