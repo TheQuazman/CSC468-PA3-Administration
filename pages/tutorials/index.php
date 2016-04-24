@@ -3,7 +3,32 @@
         <title>Tutorials</title>
         <link rel="stylesheet" type="text/css" href="style.css"/>
         <link rel="shortcut icon" href="SDSMT-Logo.jpg"/>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+        <script src="toggle.js"></script>
         <?php include('displayXML.php'); ?>
+
+        <script>
+            // Don’t use this! See note below.
+            if (!('open' in document.createElement('details'))) {
+                document.documentElement.className += ' no-details';
+            }       
+        </script>
+
+        <script>
+            // Detect whether `<details>`/`<summary>` are natively supported
+            console.log($.fn.details.support ? 'Native support' : 'No native support');
+            // Conditionally add a classname to the `html` element, based on native support
+            $('html').addClass($.fn.details.support ? 'details' : 'no-details');
+
+            $('details').on({
+             'open.details': function() {
+                console.log('opened');
+              },
+              'close.details': function() {
+                console.log('closed');
+              }
+            });
+        </script>
     </head>
     <body>        
 
@@ -75,6 +100,9 @@
 				        <?php displayXML('books.xml');?>
                     </div>
 			    </details>
+                <script>
+                $('details').details();
+                </script>
             </div>
         </div>
     
