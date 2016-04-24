@@ -4,10 +4,15 @@
     $link = "";
     $description = "";
 
+    //determine what type of item is being edited
+    //to populate the editing fields
     if(isset($_POST['tutorial']))
     {
+        //load XML
         $fileName = 'tutorials.xml';
         $xml = simplexml_load_file($fileName);
+
+        //find item and edit it
         foreach($xml->item as $a)
         {
             if($a['id'] == $_POST['tutorial'])
@@ -20,12 +25,16 @@
             }
         }
 
+        //save XML
         $xml->asXML($fileName);
     }
     if(isset($_POST['tool']))
     {
+        //load XML
         $fileName = 'tools.xml';
         $xml = simplexml_load_file($fileName);
+
+        //find item and edit it
         foreach($xml->item as $a)
         {
             if($a['id'] == $_POST['tool'])
@@ -38,12 +47,16 @@
             }
         }
 
+        //save XML
         $xml->asXML($fileName);
     }
     if(isset($_POST['book']))
     {
+        //load XML
         $fileName = 'books.xml';
         $xml = simplexml_load_file($fileName);
+
+        //find item and edit it
         foreach($xml->item as $a)
         {
             if($a['id'] == $_POST['book'])
@@ -55,6 +68,9 @@
                 $description = $a['description'];
             }
         }
+
+        //save XML
+        $xml->asXML($fileName);
     }
 ?>
 
