@@ -5,8 +5,9 @@
         <link rel="shortcut icon" href="SDSMT-Logo.jpg"/>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
         <script src="toggle.js"></script>
-        <?php include('displayXML.php'); ?>
-
+        <?php include('displayXML.php');?>
+        <?php include('../../includes/user.php');?>
+        <?php include('../../includes/mcs-user.php')?>
         <script>
             // Don’t use this! See note below.
             if (!('open' in document.createElement('details'))) {
@@ -32,18 +33,40 @@
     </head>
     <body>        
 
-<!-- #This section needs to be checking for certain permissions in order to display. -->
+<!-- #This section needs to be checking for certain permissions in 
+        order to display. -->
 <!-- Currently displays regardless of permissions. -->
+
+    <!-- If a user is logged in -->    
+    <!-- For demo, thow an '!' in here -->
+    <?php if( User::isAuthenticated() ): ?>
+    <!--Then check here if user is an admin, if so, give them edit
+            permission-->
     <div class="adminButtons">
-    <p>Welcome, Admin!</p>
+        <p>Welcome, Admin!</p>
         <form method="post">
             <input type="submit" id="viewButton" value="View All Elements" formaction="index.php"/>
             <input type="submit" id="addButton" value="Add" formaction="insert.php"/>
             <input type="submit" id="modifyButton" value="Modify" formaction="modify.php"/>
         </form>
     </div>
-<!-- # -->
 
+    <!-- If a user is not logged in, show login dialog-->
+    <?php else: ?>
+    <div class="loginButtons">
+        <p>Login:</p>
+        <form method="post">
+            <div class="loginLabel">Username:</div>
+                 <input type="text" name="userId"/>
+            <br/>
+            <div class="loginLabel">Password:</div>
+                <input type="text" name="password"/>
+                <input type="submit" value="Submit"/>
+        </form>
+    </div>
+    <?php endif ?>
+
+<!-- # -->
         <header>
             <img class="header-logo " src="SDSMT-Logo.jpg"/>
             

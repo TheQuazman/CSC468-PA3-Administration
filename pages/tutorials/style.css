@@ -140,7 +140,7 @@ details {
     background: #EEE;
 }
 
-div.adminButtons{
+div.adminButtons {
     padding: 5px;
     color: #f7f7f7;
     font-size: 1.5em;   
@@ -148,6 +148,21 @@ div.adminButtons{
     right: 0;
     position: absolute;
     width: 20%
+}
+
+div.loginButtons {
+    padding: 5px;
+    color: #f7f7f7;
+    font-size 1.5em;
+    top: 0;
+    right: 0;
+    position: absolute;
+    width: 20%;
+}
+
+div.loginLabel {
+    font-size: 100%;
+    color: #B6A36B;
 }
 
 /* <details> and <summary> are block level elements */
