@@ -20,11 +20,9 @@
 <!-- # -->
 
         <header>
-            <img class="header-logo " src="SDSMT-Logo.jpg"/>
+            <a href="http://www.sdsmt.edu/">
+            <img class="header-logo " src="SDSMT-Logo.jpg"/></a>
             Mathematics and Computer Science Department
-            <!--<form action="login.php" method="post">    
-            <input type="text" name="name">
-            </form>-->
         </header>
 
         <div class="side-nav-container">

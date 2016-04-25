@@ -1,6 +1,6 @@
 <html>
     <head>
-        <title>Tutorials</title>
+        <title>SDSMT | Department of Mathematics and Computer Science</title>
         <link rel="stylesheet" type="text/css" href="style.css"/>
         <link rel="shortcut icon" href="SDSMT-Logo.jpg"/>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
@@ -33,44 +33,10 @@
     </head>
     <body>        
 
-<!-- #This section needs to be checking for certain permissions in 
-        order to display. -->
-<!-- Currently displays regardless of permissions. -->
-
-    <!-- If a user is logged in -->    
-    <!-- For demo, thow an '!' in here -->
-    <?php if( User::isAuthenticated() ): ?>
-    <!--Then check here if user is an admin, if so, give them edit
-            permission-->
-    <div class="adminButtons">
-        <p>Welcome, Admin!</p>
-        <form method="post">
-            <input type="submit" id="viewButton" value="View All Elements" formaction="index.php"/>
-            <input type="submit" id="addButton" value="Add" formaction="insert.php"/>
-            <input type="submit" id="modifyButton" value="Modify" formaction="modify.php"/>
-        </form>
-    </div>
-
-    <!-- If a user is not logged in, show login dialog-->
-    <?php else: ?>
-    <div class="loginButtons">
-        <p>Login:</p>
-        <form method="post">
-            <div class="loginLabel">Username:</div>
-                 <input type="text" name="userId"/>
-            <br/>
-            <div class="loginLabel">Password:</div>
-                <input type="text" name="password"/>
-                <input type="submit" value="Submit"/>
-        </form>
-    </div>
-    <?php endif ?>
-
 <!-- # -->
         <header>
             <a href="http://www.sdsmt.edu/">
             <img class="header-logo " src="SDSMT-Logo.jpg"/></a>
-            
                 Mathematics and Computer Science Department
         </header>
 
@@ -96,34 +62,26 @@
                     <li><a href="../students/index.php">Students</a></li>
                     <li><a href="../submit/index.php">Submit it!</a></li>
                     <li><a href="../test/index.php">Test</a></li>
-                    <li class="current-item"><a href="../tutorials/index.php">Tutorials</a></li>
+                    <li><a href="../tutorials/index.php">Tutorials</a></li>
                 </ul>
             </div>
         </div>
 
   	    <div class="body-container">
             <div class="content">
-                <details open>
-				    <summary style="font-size:30px;">Tutorials and References</summary>
-                    <div style="padding-left:30px; background: inherit;">
-				        <?php displayXML('tutorials.xml');?>
-                    </div>
-			    </details>
-			    <details open>
-    				    <summary style="font-size:30px;">Tools</summary>
-                    <div style="padding-left:30px; background: inherit;">
-				        <?php displayXML('tools.xml');?>
-                    </div>
-			    </details>
-			    <details open>
-				    <summary style="font-size:30px;">Books</summary>
-                    <div style="padding-left:30px; background: inherit;">
-				        <?php displayXML('books.xml');?>
-                    </div>
-			    </details>
-                <script>
-                $('details').details();
-                </script>
+<b>Welcome to Mathematics and Computer Science @ SDSM&T</b>
+<br/>
+We are in the process of moving all our materials to the main campus website. You can find the new department home at <a href="http://www.sdsmt.edu/MCS/">http://www.sdsmt.edu/MCS/</a>.
+<br/><br/>
+Our department offers a B.S. in Computer Science, a B.S. in Applied and Computational Mathematics, and a new M.S. in Computational Sciences and Robotics. Our B.S. Computer Science degree is accredited by the Computing Accreditation Commission of ABET, <a href="http://www.abet.org">http://www.abet.org</a>.
+
+            <hr/>
+<b>A Few Items Still on this Website</b>
+<br/>
+The code submission page has been redesigned to hopefully make it more user friendly and intuitive. The code submission page can now be found under <a href="../submit/index.php">"Students Submit It!"</a>. 
+The Alumni, resources, and policy pages on the left navigation menu are still complete with the information we have been maintaining. Please check out the new department home at <a href="http://www.sdsmt.edu/MCS/">http://www.sdsmt.edu/MCS/</a> to get the latest and greatest information.
+
+
             </div>
         </div>
     
